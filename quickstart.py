@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     terminated = False
     while not terminated:
-        print(env.render() + "\n")
         action = env.action_space.sample()
         observation, reward, terminated, truncated, info = env.step(action)
+        print(info["lines_cleared"])
     print("Game Over!")
