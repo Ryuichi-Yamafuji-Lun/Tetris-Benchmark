@@ -1,8 +1,29 @@
+import pandas as pd
+import argparse
+import importlib.util
+from pathlib import Path
 import gymnasium as gym
 
 from tetris_gymnasium.envs.tetris import Tetris
 
+# agent imports 
 from agents import random_agent
+
+# loading agents
+def load_agents(file_path):
+    module_name = Path(file_path).stem
+
+    spec = importlib.util.spec_from_file_location(module_name, file_path)
+
+    if spec is None:
+        raise ImportError(f"Could not find module specification for file: {file_path}")
+    
+    module = importlib.util.module_from_spec(spec)
+
+    spec.loader.exec_module(module)
+
+    return module.agent_action
+
 # benchmarking function
 def run_agent_test(agent, iterations = 100, seed = 1):
     
@@ -40,10 +61,41 @@ def run_agent_test(agent, iterations = 100, seed = 1):
     return [reward_score / iterations, lines_cleared_score / iterations]
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Run Tetris Gymnasium benchmark.")
+
+    parser.add_argument(
+        'agents',
+        type=str,
+        nargs='+',
+        help='List of agent file paths (e.g., random_agent.py rl_agent.py)'
+    )
+
+    parser.add_argument(
+        'iterations',
+        type=int,
+        default=100,
+        help='Number of games to run for each agent. Default = 100'
+    )
+
+    args = parser.parse_args()
+
     # Run the benchmark
     TEST_SEED = 1
-    TEST_ITERATIONS = 100
 
-    # run random agent
-    random_agent_reward_score, random_agent_lines_cleared_score = run_agent_test(random_agent.agent_action_random, TEST_ITERATIONS, TEST_SEED)
-    print(f"Random Agent: Avg Reward Score: {random_agent_reward_score} | Avg Lines Cleared: {random_agent_lines_cleared_score}")
+    for agent_path in args.agents:
+        # Load the agent function
+        agent_fn = load_agents(agent_path)
+        
+        # Get a clean name for logging
+        agent_name = agent_path.split('/')[-1].replace('.py', '')
+        
+        print(f"--- Running Benchmark for: {agent_name} ---")
+        
+        # Run the agent using the parsed arguments
+        avg_reward, avg_lines = run_agent_test(
+            agent_fn, 
+            args.iterations, 
+            TEST_SEED
+        )
+        
+        print(f"{agent_name}: Avg Reward: {avg_reward} | Avg Lines: {avg_lines}")
