@@ -1,9 +1,8 @@
 import pandas as pd
 import argparse
 import importlib.util
-from pathlib import Path
 import gymnasium as gym
-
+from pathlib import Path
 from tetris_gymnasium.envs.tetris import Tetris
 
 # agent imports 
