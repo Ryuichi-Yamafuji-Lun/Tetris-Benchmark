@@ -46,6 +46,7 @@ def run_agent_test(agent, iterations = 100, seed = 1):
             observation, reward, terminated, truncated, info = env.step(action)
 
             current_reward_score += reward
+            print(reward)
             current_lines_cleared_score += info["lines_cleared"]
 
         reward_score += current_reward_score
@@ -61,7 +62,8 @@ if __name__ == "__main__":
         'agents',
         type=str,
         nargs='+',
-        help='List of agent file paths (e.g., random_agent.py rl_agent.py)'
+        help='List of agent file paths (e.g., random_agent.py rl_agent.py)',
+        default = "/Users/rirando/Documents/tetris/Tetris-Benchmark/agents/dqn_agent.py"
     )
 
     parser.add_argument(

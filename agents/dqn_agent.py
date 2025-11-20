@@ -1,12 +1,14 @@
 import torch
 import numpy as np
 import gymnasium as gym
-from training_scripts.train_lin_grouped import QNetwork 
 from pathlib import Path
 import sys
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT)) 
+
+
+from training_scripts.train_lin_grouped import QNetwork 
 
 AGENT_DIR = Path(__file__).resolve().parent
 
@@ -21,6 +23,7 @@ class MockEnvs:
     def __init__(self):
         self.single_observation_space = gym.spaces.Box(0.0, 200.0, (1, 13), np.float32)
         self.single_action_space = gym.spaces.Discrete(5)
+        
 
 DQN_MODEL = QNetwork(MockEnvs()).to('cpu')
 DQN_MODEL.load_state_dict(torch.load(MODEL_FILE_PATH_STR, map_location=torch.device('cpu')))
@@ -30,6 +33,8 @@ def agent_action(obs, info):
     """
     Retrieves the feature vector observation and returns the greedy action.
     """
+    print(info["action_mask"])
+    
     action_mask = info["action_mask"]
     num_actions = len(action_mask)
 
