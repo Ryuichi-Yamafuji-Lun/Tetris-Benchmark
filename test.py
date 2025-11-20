@@ -58,14 +58,15 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Tetris Gymnasium benchmark.")
 
     parser.add_argument(
-        'agents',
+        '--agents',
         type=str,
         nargs='+',
-        help='List of agent file paths (e.g., random_agent.py rl_agent.py)'
+        help='List of agent file paths (e.g., random_agent.py rl_agent.py)',
+        default=['./agents/random_agent.py']
     )
 
     parser.add_argument(
-        'iterations',
+        '--iterations',
         type=int,
         default=100,
         help='Number of games to run for each agent. Default = 100'
