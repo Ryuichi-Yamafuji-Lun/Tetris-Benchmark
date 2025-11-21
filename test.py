@@ -68,7 +68,7 @@ if __name__ == "__main__":
     parser.add_argument(
         '--iterations',
         type=int,
-        default=100,
+        default=1,
         help='Number of games to run for each agent. Default = 100'
     )
 
