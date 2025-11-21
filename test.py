@@ -6,6 +6,10 @@ from pathlib import Path
 from tetris_gymnasium.envs.tetris import Tetris
 from tetris_gymnasium.wrappers.grouped import GroupedActionsObservations
 from tetris_gymnasium.wrappers.observation import FeatureVectorObservation
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # loading agents
 def load_agents(file_path):
@@ -46,7 +50,6 @@ def run_agent_test(agent, iterations = 100, seed = 1):
             observation, reward, terminated, truncated, info = env.step(action)
 
             current_reward_score += reward
-            print(reward)
             current_lines_cleared_score += info["lines_cleared"]
 
         reward_score += current_reward_score
@@ -59,17 +62,17 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Tetris Gymnasium benchmark.")
 
     parser.add_argument(
-        'agents',
+        '--agents',
         type=str,
         nargs='+',
         help='List of agent file paths (e.g., random_agent.py rl_agent.py)',
-        default = "/Users/rirando/Documents/tetris/Tetris-Benchmark/agents/dqn_agent.py"
+        default=['./agents/random_agent.py']
     )
 
     parser.add_argument(
-        'iterations',
+        '--iterations',
         type=int,
-        default=100,
+        default=1,
         help='Number of games to run for each agent. Default = 100'
     )
 
