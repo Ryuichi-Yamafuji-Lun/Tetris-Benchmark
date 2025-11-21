@@ -8,6 +8,15 @@
         "rotate_left": 3,
         "rotate_right": 4
     },
+    "tetromino_mapping": {
+        "0": "I_Line",
+        "1": "O_Square",
+        "2": "T_Piece",
+        "3": "S_Piece",
+        "4": "Z_Piece",
+        "5": "J_Piece",
+        "6": "L_Piece"
+    },
     "render_mode_gym_make": "human",
     "max_unchanged_steps_for_termination": 30
 } 
