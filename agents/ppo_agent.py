@@ -1,48 +1,67 @@
-import torch
-import numpy as np
-import gymnasium as gym
-from training_scripts.train_ppo import Agent
-from pathlib import Path
 import sys
-import glob
-import os
+from pathlib import Path
+
+import gymnasium as gym
+import numpy as np
+import torch
+
+from training_scripts.train_ppo import Agent
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
 AGENT_DIR = Path(__file__).resolve().parent
 
-# Automatically find the most recent model
-model_files = glob.glob(
-    str(AGENT_DIR.parent / "training_scripts" / "runs" / "**" / "train_ppo.cleanrl_model"), 
-    recursive=True
+# Update this path to your trained PPO model
+MODEL_FILE_PATH = (
+    AGENT_DIR.parent
+    / "runs"
+    / "tetris_gymnasium"
+    / "Tetris__train_ppo__1__1763520300"
+    / "train_ppo.cleanrl_model"
 )
-if not model_files:
-    raise FileNotFoundError("No trained PPO model found! Please train the model first.")
 
-MODEL_FILE_PATH_STR = max(model_files, key=os.path.getctime)
-print(f"Loading model from: {MODEL_FILE_PATH_STR}")
+MODEL_FILE_PATH_STR = str(MODEL_FILE_PATH)
+
 
 class MockEnvs:
     """Mocks the essential parts of gym.vector.SyncVectorEnv needed by Agent constructor."""
-    def __init__(self):
-        # Match the actual training: (40, 13)
-        self.single_observation_space = gym.spaces.Box(
-            low=0.0, high=200.0, shape=(40, 13), dtype=np.float32
-        )
-        self.single_action_space = gym.spaces.Discrete(40)
 
-PPO_MODEL = Agent(MockEnvs()).to('cpu')
-PPO_MODEL.load_state_dict(torch.load(MODEL_FILE_PATH_STR, map_location=torch.device('cpu')))
+    def __init__(self):
+        # PPO uses 4 stacked grayscale frames of 84x84 pixels
+        self.single_observation_space = gym.spaces.Box(0, 255, (4, 84, 84), np.uint8)
+        self.single_action_space = gym.spaces.Discrete(
+            8
+        )  # Adjust based on your Tetris action space
+
+
+PPO_MODEL = Agent(MockEnvs()).to("cpu")
+PPO_MODEL.load_state_dict(
+    torch.load(MODEL_FILE_PATH_STR, map_location=torch.device("cpu"))
+)
 PPO_MODEL.eval()
+
 
 def agent_action(obs, info):
     """
-    Retrieves the observation and returns the action from PPO policy.
+    Takes image observation (4 stacked grayscale frames) and returns action.
+
+    Args:
+        obs: numpy array of shape (4, 84, 84) - 4 stacked grayscale frames
+        info: dict with environment info
+
+    Returns:
+        action: integer action
     """
-    obs_tensor = torch.Tensor(obs).unsqueeze(0).to('cpu')
-    
+    # Convert observation to tensor and add batch dimension
+    obs_tensor = torch.Tensor(obs).unsqueeze(0).to("cpu")
+
     with torch.no_grad():
-        action, _, _, _ = PPO_MODEL.get_action_and_value(obs_tensor)
-    
-    return action.cpu().numpy()[0]
+        # Get action logits from policy network
+        hidden = PPO_MODEL.network(obs_tensor / 255.0)
+        logits = PPO_MODEL.actor(hidden).squeeze()
+
+        # Choose action with highest probability (deterministic evaluation)
+        action = torch.argmax(logits).cpu().numpy()
+
+    return int(action)

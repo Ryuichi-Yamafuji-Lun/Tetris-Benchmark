@@ -1,4 +1,5 @@
-#docs and experiment results can be found at https://docs.cleanrl.dev/rl-algorithms/ppo/#ppo_ataripy
+# PPO for Tetris - Fixed and Optimized Version
+# Combines best practices from CleanRL with fixes for tetris_gymnasium compatibility
 import os
 import random
 import time
@@ -10,12 +11,16 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import tyro
+from stable_baselines3.common.atari_wrappers import ClipRewardEnv
+from tetris_gymnasium.envs import Tetris
+from tetris_gymnasium.wrappers.observation import RgbObservation
 from torch.distributions.categorical import Categorical
 from torch.utils.tensorboard import SummaryWriter
 
-from tetris_gymnasium.envs import Tetris
-from tetris_gymnasium.wrappers.grouped import GroupedActionsObservations
-from tetris_gymnasium.wrappers.observation import FeatureVectorObservation
+try:
+    import wandb
+except ImportError:
+    wandb = None
 
 
 @dataclass
@@ -42,7 +47,7 @@ class Args:
     # Algorithm specific arguments
     env_id: str = "tetris_gymnasium/Tetris"
     """the id of the environment"""
-    total_timesteps: int = 5000000
+    total_timesteps: int = 10000000
     """total timesteps of the experiments"""
     learning_rate: float = 2.5e-4
     """the learning rate of the optimizer"""
@@ -84,55 +89,107 @@ class Args:
     """the number of iterations (computed in runtime)"""
 
 
+class NormalizeRgbObservation(gym.ObservationWrapper):
+    """
+    Ensures RGB observations are in [0, 255] uint8 format.
+
+    This wrapper fixes compatibility issues between tetris_gymnasium's RgbObservation
+    and gymnasium's GrayScaleObservation wrapper. The GrayScaleObservation wrapper
+    expects observations with low=0, high=255, and dtype=uint8, but RgbObservation
+    may not set these correctly.
+    """
+
+    def __init__(self, env):
+        super().__init__(env)
+        if isinstance(env.observation_space, gym.spaces.Box):
+            shape = env.observation_space.shape
+            # Force observation space to be uint8 [0, 255]
+            self.observation_space = gym.spaces.Box(
+                low=0, high=255, shape=shape, dtype=np.uint8
+            )
+
+    def observation(self, observation):
+        """Ensure observation is uint8 in range [0, 255]"""
+        if observation.dtype != np.uint8:
+            # If float in [0, 1], scale to [0, 255]
+            if (
+                observation.max() <= 1.0 + 1e-5
+            ):  # Small epsilon for floating point errors
+                observation = (observation * 255).astype(np.uint8)
+            else:
+                # Otherwise just cast to uint8
+                observation = np.clip(observation, 0, 255).astype(np.uint8)
+        return observation
+
+
 def make_env(env_id, idx, capture_video, run_name):
     def thunk():
         if capture_video and idx == 0:
-            env = gym.make(env_id, render_mode="rgb_array", gravity=False)
-            env = GroupedActionsObservations(
-                env, observation_wrappers=[FeatureVectorObservation(env)]
-            )
+            env = gym.make(env_id, render_mode="rgb_array")
+            env = RgbObservation(env)
             env = gym.wrappers.RecordVideo(env, f"videos/{run_name}")
         else:
-            env = gym.make(env_id, gravity=False)
-            env = GroupedActionsObservations(
-                env, observation_wrappers=[FeatureVectorObservation(env)]
-            )
+            env = gym.make(env_id)
+            env = RgbObservation(env)
+
         env = gym.wrappers.RecordEpisodeStatistics(env)
+
+        # CRITICAL FIX: Normalize RGB observations before grayscale conversion
+        env = NormalizeRgbObservation(env)
+
+        # Apply reward clipping (consider removing if Tetris rewards are sparse)
+        env = ClipRewardEnv(env)
+
+        # Resize to standard Atari size
+        env = gym.wrappers.ResizeObservation(env, (84, 84))
+
+        # Convert to grayscale
+        env = gym.wrappers.GrayscaleObservation(env)
+
+        # Stack 4 frames for temporal information
+        env = gym.wrappers.FrameStackObservation(env, 4)
+
         return env
 
     return thunk
 
 
 def layer_init(layer, std=np.sqrt(2), bias_const=0.0):
+    """Initialize layer with orthogonal initialization"""
     torch.nn.init.orthogonal_(layer.weight, std)
     torch.nn.init.constant_(layer.bias, bias_const)
     return layer
 
 
 class Agent(nn.Module):
+    """PPO Agent with CNN architecture for visual observations"""
+
     def __init__(self, envs):
         super().__init__()
-        # Get the feature vector size from observation space
-        obs_shape = envs.single_observation_space.shape
-        # Simply flatten the entire observation
-        input_size = np.prod(obs_shape)
-        
+        # Feature extraction network
         self.network = nn.Sequential(
-            layer_init(nn.Linear(input_size, 256)),
+            layer_init(nn.Conv2d(4, 32, 8, stride=4)),
             nn.ReLU(),
-            layer_init(nn.Linear(256, 256)),
+            layer_init(nn.Conv2d(32, 64, 4, stride=2)),
+            nn.ReLU(),
+            layer_init(nn.Conv2d(64, 64, 3, stride=1)),
+            nn.ReLU(),
+            nn.Flatten(),
+            layer_init(nn.Linear(64 * 7 * 7, 512)),
             nn.ReLU(),
         )
-        self.actor = layer_init(nn.Linear(256, envs.single_action_space.n), std=0.01)
-        self.critic = layer_init(nn.Linear(256, 1), std=1)
+        # Policy head
+        self.actor = layer_init(nn.Linear(512, envs.single_action_space.n), std=0.01)
+        # Value head
+        self.critic = layer_init(nn.Linear(512, 1), std=1)
 
     def get_value(self, x):
-        x = x.reshape(x.shape[0], -1)
-        return self.critic(self.network(x))
+        """Get value estimate for state"""
+        return self.critic(self.network(x / 255.0))
 
     def get_action_and_value(self, x, action=None):
-        x = x.reshape(x.shape[0], -1)
-        hidden = self.network(x)
+        """Get action distribution and value estimate"""
+        hidden = self.network(x / 255.0)
         logits = self.actor(hidden)
         probs = Categorical(logits=logits)
         if action is None:
@@ -145,14 +202,9 @@ if __name__ == "__main__":
     args.batch_size = int(args.num_envs * args.num_steps)
     args.minibatch_size = int(args.batch_size // args.num_minibatches)
     args.num_iterations = args.total_timesteps // args.batch_size
-    
-    greek_letters = [
-        "alpha", "beta", "gamma", "delta", "epsilon", "zeta", "eta", "theta",
-        "iota", "kappa", "lambda", "mu", "nu", "xi", "omicron", "pi", "rho",
-        "sigma", "tau", "upsilon", "phi", "chi", "psi", "omega",
-    ]
-    run_name = f"{args.exp_name}/{random.choice(greek_letters)}_{random.choice(greek_letters)}__{args.seed}__{int(time.time())}"
-    
+
+    run_name = f"{args.env_id}__{args.exp_name}__{args.seed}__{int(time.time())}"
+
     if args.track:
         import wandb
 
@@ -165,22 +217,24 @@ if __name__ == "__main__":
             monitor_gym=True,
             save_code=True,
         )
-    writer = SummaryWriter(f"training_scripts/runs/{run_name}")
+
+    writer = SummaryWriter(f"runs/{run_name}")
     writer.add_text(
         "hyperparameters",
         "|param|value|\n|-|-|\n%s"
         % ("\n".join([f"|{key}|{value}|" for key, value in vars(args).items()])),
     )
 
-    # TRY NOT TO MODIFY: seeding
+    # Seeding
     random.seed(args.seed)
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
     torch.backends.cudnn.deterministic = args.torch_deterministic
 
     device = torch.device("cuda" if torch.cuda.is_available() and args.cuda else "cpu")
+    print(f"Using device: {device}")
 
-    # env setup
+    # Environment setup
     envs = gym.vector.SyncVectorEnv(
         [
             make_env(args.env_id, i, args.capture_video, run_name)
@@ -191,10 +245,17 @@ if __name__ == "__main__":
         envs.single_action_space, gym.spaces.Discrete
     ), "only discrete action space is supported"
 
+    # Debug: Print environment info
+    print(f"\nEnvironment Info:")
+    print(f"  Observation space: {envs.single_observation_space}")
+    print(f"  Action space: {envs.single_action_space}")
+    print(f"  Number of actions: {envs.single_action_space.n}")
+
+    # Initialize agent and optimizer
     agent = Agent(envs).to(device)
     optimizer = optim.Adam(agent.parameters(), lr=args.learning_rate, eps=1e-5)
 
-    # ALGO Logic: Storage setup
+    # Storage setup
     obs = torch.zeros(
         (args.num_steps, args.num_envs) + envs.single_observation_space.shape
     ).to(device)
@@ -206,57 +267,69 @@ if __name__ == "__main__":
     dones = torch.zeros((args.num_steps, args.num_envs)).to(device)
     values = torch.zeros((args.num_steps, args.num_envs)).to(device)
 
-    # TRY NOT TO MODIFY: start the game
+    # Start the game
     global_step = 0
     start_time = time.time()
     next_obs, _ = envs.reset(seed=args.seed)
     next_obs = torch.Tensor(next_obs).to(device)
     next_done = torch.zeros(args.num_envs).to(device)
 
+    print(
+        f"\nStarting training for {args.num_iterations} iterations ({args.total_timesteps:,} steps)"
+    )
+    print(f"Batch size: {args.batch_size}, Minibatch size: {args.minibatch_size}\n")
+
     try:
         for iteration in range(1, args.num_iterations + 1):
-            # Annealing the rate if instructed to do so.
+            # Anneal learning rate
             if args.anneal_lr:
                 frac = 1.0 - (iteration - 1.0) / args.num_iterations
                 lrnow = frac * args.learning_rate
                 optimizer.param_groups[0]["lr"] = lrnow
 
+            # Collect rollout
             for step in range(0, args.num_steps):
                 global_step += args.num_envs
                 obs[step] = next_obs
                 dones[step] = next_done
 
-                # ALGO LOGIC: action logic
+                # Sample action
                 with torch.no_grad():
                     action, logprob, _, value = agent.get_action_and_value(next_obs)
                     values[step] = value.flatten()
                 actions[step] = action
                 logprobs[step] = logprob
 
-                # TRY NOT TO MODIFY: execute the game and log data.
+                # Execute action in environment
                 next_obs, reward, terminations, truncations, infos = envs.step(
                     action.cpu().numpy()
                 )
                 next_done = np.logical_or(terminations, truncations)
                 rewards[step] = torch.tensor(reward).to(device).view(-1)
-                next_obs, next_done = torch.Tensor(next_obs).to(device), torch.Tensor(
-                    next_done
-                ).to(device)
+                next_obs, next_done = (
+                    torch.Tensor(next_obs).to(device),
+                    torch.Tensor(next_done).to(device),
+                )
 
+                # Log episode statistics
                 if "final_info" in infos:
                     for info in infos["final_info"]:
                         if info and "episode" in info:
                             print(
-                                f"global_step={global_step}, episodic_return={info['episode']['r']}"
+                                f"global_step={global_step:,}, episodic_return={info['episode']['r']:.0f}"
                             )
                             writer.add_scalar(
-                                "charts/episodic_return", info["episode"]["r"], global_step
+                                "charts/episodic_return",
+                                info["episode"]["r"],
+                                global_step,
                             )
                             writer.add_scalar(
-                                "charts/episodic_length", info["episode"]["l"], global_step
+                                "charts/episodic_length",
+                                info["episode"]["l"],
+                                global_step,
                             )
 
-            # bootstrap value if not done
+            # Bootstrap value if not done
             with torch.no_grad():
                 next_value = agent.get_value(next_obs).reshape(1, -1)
                 advantages = torch.zeros_like(rewards).to(device)
@@ -269,14 +342,17 @@ if __name__ == "__main__":
                         nextnonterminal = 1.0 - dones[t + 1]
                         nextvalues = values[t + 1]
                     delta = (
-                        rewards[t] + args.gamma * nextvalues * nextnonterminal - values[t]
+                        rewards[t]
+                        + args.gamma * nextvalues * nextnonterminal
+                        - values[t]
                     )
                     advantages[t] = lastgaelam = (
-                        delta + args.gamma * args.gae_lambda * nextnonterminal * lastgaelam
+                        delta
+                        + args.gamma * args.gae_lambda * nextnonterminal * lastgaelam
                     )
                 returns = advantages + values
 
-            # flatten the batch
+            # Flatten the batch
             b_obs = obs.reshape((-1,) + envs.single_observation_space.shape)
             b_logprobs = logprobs.reshape(-1)
             b_actions = actions.reshape((-1,) + envs.single_action_space.shape)
@@ -284,7 +360,7 @@ if __name__ == "__main__":
             b_returns = returns.reshape(-1)
             b_values = values.reshape(-1)
 
-            # Optimizing the policy and value network
+            # Optimize policy and value network
             b_inds = np.arange(args.batch_size)
             clipfracs = []
             for epoch in range(args.update_epochs):
@@ -300,7 +376,7 @@ if __name__ == "__main__":
                     ratio = logratio.exp()
 
                     with torch.no_grad():
-                        # calculate approx_kl http://joschu.net/blog/kl-approx.html
+                        # Calculate approximate KL divergence
                         old_approx_kl = (-logratio).mean()
                         approx_kl = ((ratio - 1) - logratio).mean()
                         clipfracs += [
@@ -336,7 +412,9 @@ if __name__ == "__main__":
                         v_loss = 0.5 * ((newvalue - b_returns[mb_inds]) ** 2).mean()
 
                     entropy_loss = entropy.mean()
-                    loss = pg_loss - args.ent_coef * entropy_loss + v_loss * args.vf_coef
+                    loss = (
+                        pg_loss - args.ent_coef * entropy_loss + v_loss * args.vf_coef
+                    )
 
                     optimizer.zero_grad()
                     loss.backward()
@@ -346,11 +424,14 @@ if __name__ == "__main__":
                 if args.target_kl is not None and approx_kl > args.target_kl:
                     break
 
+            # Calculate explained variance
             y_pred, y_true = b_values.cpu().numpy(), b_returns.cpu().numpy()
             var_y = np.var(y_true)
-            explained_var = np.nan if var_y == 0 else 1 - np.var(y_true - y_pred) / var_y
+            explained_var = (
+                np.nan if var_y == 0 else 1 - np.var(y_true - y_pred) / var_y
+            )
 
-            # TRY NOT TO MODIFY: record rewards for plotting purposes
+            # Log metrics
             writer.add_scalar(
                 "charts/learning_rate", optimizer.param_groups[0]["lr"], global_step
             )
@@ -361,38 +442,26 @@ if __name__ == "__main__":
             writer.add_scalar("losses/approx_kl", approx_kl.item(), global_step)
             writer.add_scalar("losses/clipfrac", np.mean(clipfracs), global_step)
             writer.add_scalar("losses/explained_variance", explained_var, global_step)
-            print("SPS:", int(global_step / (time.time() - start_time)))
-            writer.add_scalar(
-                "charts/SPS", int(global_step / (time.time() - start_time)), global_step
-            )
+
+            sps = int(global_step / (time.time() - start_time))
+            writer.add_scalar("charts/SPS", sps, global_step)
+
+            if iteration % 10 == 0:
+                print(
+                    f"Iteration {iteration}/{args.num_iterations}, SPS: {sps}, Steps: {global_step:,}"
+                )
 
     except KeyboardInterrupt:
-        print("\n\nTraining interrupted! Saving model...")
+        print("\n\nTraining interrupted by user!")
 
-    # Save model at the end (or when interrupted)
+    # Save final model
     if args.save_model:
-        model_path = f"training_scripts/runs/{run_name}/{args.exp_name}.cleanrl_model"
+        model_path = f"runs/{run_name}/{args.exp_name}.cleanrl_model"
         os.makedirs(os.path.dirname(model_path), exist_ok=True)
         torch.save(agent.state_dict(), model_path)
-        print(f"model saved to {model_path}")
+        print(f"\nModel saved to {model_path}")
+        print(f"To load: agent.load_state_dict(torch.load('{model_path}'))")
 
     envs.close()
     writer.close()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    print("\nTraining complete!")
