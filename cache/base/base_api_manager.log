@@ -451,3 +451,726 @@
 2025-11-20 20:54:48,554 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_201237/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_201237/memory_api_costs.log
 2025-11-20 20:54:51,571 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
 2025-11-20 20:54:51,573 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_201237/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_201237/reasoning_api_costs.log
+2025-11-20 21:38:47,833 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-20 21:38:47,833 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-20 21:38:47,833 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-20 21:38:47,834 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-20 21:38:58,868 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:38:58,871 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:39:46,154 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:39:46,158 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:39:52,589 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:39:52,593 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:40:02,045 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:40:02,047 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:40:08,526 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:40:08,527 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:40:21,741 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:40:21,743 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:40:27,892 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:40:27,893 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:40:51,824 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:40:51,825 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:40:56,926 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:40:56,927 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:41:08,950 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:41:08,952 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:41:14,347 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:41:14,349 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:41:45,094 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:41:45,096 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:41:49,764 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:41:49,765 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:42:12,803 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:42:12,808 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:42:18,060 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:42:18,063 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:42:32,450 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:42:32,453 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:42:37,417 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:42:37,419 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:43:00,061 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:43:00,064 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:43:06,943 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:43:06,945 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:43:21,452 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:43:21,454 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:43:29,226 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:43:29,228 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:43:53,554 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:43:53,556 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:44:04,055 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:44:04,059 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:45:03,817 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:45:03,820 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:45:10,982 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:45:10,984 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_213847/memory_api_costs.log
+2025-11-20 21:45:15,182 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 21:45:15,183 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251120_213847/reasoning_api_costs.log
+2025-11-20 21:45:15,376 - llm_agent.tools.serving.api_manager - ERROR - Error in text-only completion API call: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250, model: gemini-2.5-flash
+Please retry in 44.696789811s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2025-11-20 22:17:32,084 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-20 22:17:32,085 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-20 22:17:32,085 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-20 22:17:32,085 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-20 22:17:38,121 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-20 22:17:38,124 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251120_221732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251120_221732/memory_api_costs.log
+2025-11-20 22:17:50,711 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-20 22:17:50,711 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-20 22:17:50,712 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-20 22:17:50,712 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-20 22:17:50,913 - llm_agent.tools.serving.api_manager - ERROR - Error in text-only completion API call: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250, model: gemini-2.5-flash
+Please retry in 9.120809945s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250
+}
+, retry_delay {
+  seconds: 9
+}
+]
+2025-11-21 07:52:57,903 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-21 07:52:57,903 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-21 07:52:57,903 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-21 07:52:57,903 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-21 07:53:11,865 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:53:11,867 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:53:14,759 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:53:14,761 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 07:53:21,331 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:53:21,333 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:53:23,450 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:53:23,451 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 07:53:35,239 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:53:35,240 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:53:39,825 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:53:39,828 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 07:53:47,123 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:53:47,125 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:53:50,228 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:53:50,232 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 07:53:57,295 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:53:57,296 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:54:07,511 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:54:07,513 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 07:54:17,847 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:54:17,849 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:54:20,409 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:54:20,412 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 07:54:29,216 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:54:29,217 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:54:31,890 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:54:31,893 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 07:54:37,771 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:54:37,773 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:54:50,669 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:54:50,672 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 07:54:57,202 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:54:57,204 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:55:04,379 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:55:04,381 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 07:55:11,686 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:55:11,687 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:55:30,904 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:55:30,906 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 07:55:41,408 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:55:41,411 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:56:01,125 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:56:01,127 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 07:56:24,398 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:56:24,401 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_075257/memory_api_costs.log
+2025-11-21 07:56:27,283 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 07:56:27,285 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_075257/reasoning_api_costs.log
+2025-11-21 08:14:09,603 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-21 08:14:09,603 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-21 08:14:09,603 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-21 08:14:09,603 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-21 08:14:19,542 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:14:19,545 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_081409/memory_api_costs.log
+2025-11-21 08:15:09,668 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:15:09,672 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/reasoning_api_costs.log
+2025-11-21 08:15:28,150 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:15:28,152 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_081409/memory_api_costs.log
+2025-11-21 08:15:39,574 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:15:39,576 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/reasoning_api_costs.log
+2025-11-21 08:16:17,169 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:16:17,183 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_081409/memory_api_costs.log
+2025-11-21 08:16:55,578 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:16:55,580 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/reasoning_api_costs.log
+2025-11-21 08:17:04,285 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:17:04,288 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_081409/memory_api_costs.log
+2025-11-21 08:17:07,265 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:17:07,267 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/reasoning_api_costs.log
+2025-11-21 08:17:14,460 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:17:14,462 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_081409/memory_api_costs.log
+2025-11-21 08:17:28,429 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:17:28,433 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/reasoning_api_costs.log
+2025-11-21 08:17:50,795 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:17:50,797 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_081409/memory_api_costs.log
+2025-11-21 08:17:54,973 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:17:54,976 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/reasoning_api_costs.log
+2025-11-21 08:18:02,282 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:18:02,283 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_081409/memory_api_costs.log
+2025-11-21 08:18:08,729 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:18:08,731 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/reasoning_api_costs.log
+2025-11-21 08:18:16,914 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:18:16,915 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_081409/memory_api_costs.log
+2025-11-21 08:18:27,716 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:18:27,718 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/reasoning_api_costs.log
+2025-11-21 08:18:45,888 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:18:45,890 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_081409/memory_api_costs.log
+2025-11-21 08:18:52,547 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:18:52,548 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/reasoning_api_costs.log
+2025-11-21 08:19:04,388 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:19:04,390 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_081409/memory_api_costs.log
+2025-11-21 08:19:07,878 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:19:07,880 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/reasoning_api_costs.log
+2025-11-21 08:19:19,058 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:19:19,061 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_081409/memory_api_costs.log
+2025-11-21 08:19:21,225 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:19:21,227 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_081409/reasoning_api_costs.log
+2025-11-21 08:27:32,760 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-21 08:27:32,761 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-21 08:27:32,761 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-21 08:27:32,761 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-21 08:27:38,787 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:27:38,789 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:28:15,312 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:28:15,314 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 08:28:20,029 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:28:20,030 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:28:28,717 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:28:28,719 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 08:28:38,323 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:28:38,325 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:29:06,484 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:29:06,486 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 08:29:10,659 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:29:10,660 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:29:13,561 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:29:13,563 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 08:29:19,182 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:29:19,184 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:29:24,220 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:29:24,222 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 08:29:33,522 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:29:33,523 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:29:36,415 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:29:36,416 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 08:29:43,692 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:29:43,694 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:29:50,313 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:29:50,315 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 08:29:56,360 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:29:56,362 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:30:00,036 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:30:00,037 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 08:30:06,886 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:30:06,887 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:30:10,437 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:30:10,439 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 08:30:17,677 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:30:17,679 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:30:27,671 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:30:27,673 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 08:30:36,533 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:30:36,535 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:30:40,615 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:30:40,617 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 08:30:45,953 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:30:45,954 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_082732/memory_api_costs.log
+2025-11-21 08:30:57,159 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 08:30:57,160 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_082732/reasoning_api_costs.log
+2025-11-21 10:10:21,720 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-21 10:10:21,720 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-21 10:10:21,720 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-21 10:10:21,720 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-21 10:10:30,624 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:10:30,627 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101021/memory_api_costs.log
+2025-11-21 10:10:42,028 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:10:42,030 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/reasoning_api_costs.log
+2025-11-21 10:10:49,447 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:10:49,449 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101021/memory_api_costs.log
+2025-11-21 10:11:06,996 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:11:07,001 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/reasoning_api_costs.log
+2025-11-21 10:11:28,815 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:11:28,818 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101021/memory_api_costs.log
+2025-11-21 10:12:05,578 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:12:05,582 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/reasoning_api_costs.log
+2025-11-21 10:12:12,684 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:12:12,686 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101021/memory_api_costs.log
+2025-11-21 10:12:16,817 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:12:16,819 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/reasoning_api_costs.log
+2025-11-21 10:12:27,364 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:12:27,366 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101021/memory_api_costs.log
+2025-11-21 10:12:30,022 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:12:30,024 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/reasoning_api_costs.log
+2025-11-21 10:12:43,452 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:12:43,453 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101021/memory_api_costs.log
+2025-11-21 10:12:47,874 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:12:47,876 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/reasoning_api_costs.log
+2025-11-21 10:12:51,924 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:12:51,926 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101021/memory_api_costs.log
+2025-11-21 10:12:56,200 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:12:56,202 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/reasoning_api_costs.log
+2025-11-21 10:13:03,058 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:13:03,061 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101021/memory_api_costs.log
+2025-11-21 10:13:05,919 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:13:05,921 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/reasoning_api_costs.log
+2025-11-21 10:13:11,257 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:13:11,259 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101021/memory_api_costs.log
+2025-11-21 10:13:14,077 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:13:14,080 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101021/reasoning_api_costs.log
+2025-11-21 10:13:20,537 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:13:20,540 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101021/memory_api_costs.log
+2025-11-21 10:13:20,726 - llm_agent.tools.serving.api_manager - ERROR - Error in text-only completion API call: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash
+Please retry in 39.322757179s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 39
+}
+]
+2025-11-21 10:19:16,954 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-21 10:19:16,955 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-21 10:19:16,955 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-21 10:19:16,955 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-21 10:19:24,751 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:19:24,752 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:19:34,297 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:19:34,300 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:20:07,334 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:20:07,336 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:20:29,181 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:20:29,183 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:20:51,569 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:20:51,571 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:21:08,389 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:21:08,391 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:21:18,775 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:21:18,777 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:21:21,560 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:21:21,562 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:21:28,993 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:21:28,995 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:21:48,255 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:21:48,256 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:21:56,955 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:21:56,958 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:21:59,618 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:21:59,621 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:22:07,050 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:22:07,052 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:22:14,399 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:22:14,403 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:22:21,947 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:22:21,949 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:22:27,969 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:22:27,972 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:22:37,508 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:22:37,510 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:22:41,858 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:22:41,862 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:22:49,488 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:22:49,489 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:22:53,437 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:22:53,441 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:23:01,572 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:23:01,574 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:23:05,658 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:23:05,660 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:23:22,791 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:23:22,793 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_101916/memory_api_costs.log
+2025-11-21 10:23:25,874 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:23:25,877 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_101916/reasoning_api_costs.log
+2025-11-21 10:33:13,306 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-21 10:33:13,306 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-21 10:33:13,307 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-21 10:33:13,307 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-21 10:33:27,536 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:33:27,538 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:33:32,195 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:33:32,196 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-21 10:33:41,276 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:33:41,278 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:34:24,354 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:34:24,358 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-21 10:34:30,858 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:34:30,860 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:34:34,711 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:34:34,713 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-21 10:34:41,487 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:34:41,489 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:34:45,347 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:34:45,349 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-21 10:34:51,620 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:34:51,621 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:34:55,229 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:34:55,230 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-21 10:35:01,502 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:35:01,503 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:35:04,728 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:35:04,732 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-21 10:35:13,519 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:35:13,521 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:35:34,137 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:35:34,141 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-21 10:35:41,912 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:35:41,915 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:35:54,195 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:35:54,199 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-21 10:36:02,255 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:36:02,257 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:36:04,457 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:36:04,459 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-21 10:36:18,177 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:36:18,178 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:36:23,603 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:36:23,607 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-21 10:36:33,608 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:36:33,610 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:36:36,506 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:36:36,508 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-21 10:36:44,052 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:36:44,054 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251121_103313/memory_api_costs.log
+2025-11-21 10:36:53,754 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-21 10:36:53,756 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251121_103313/reasoning_api_costs.log
+2025-11-22 09:22:38,536 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-22 09:22:38,537 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-22 09:22:38,537 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-22 09:22:38,537 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-22 09:22:51,648 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:22:51,650 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:23:17,804 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:23:17,806 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:23:42,187 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:23:42,189 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:24:14,022 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:24:14,024 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:24:22,540 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:24:22,541 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:24:40,274 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:24:40,276 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:24:46,076 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:24:46,078 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:24:50,507 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:24:50,509 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:24:59,722 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:24:59,724 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:25:19,580 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:25:19,581 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:25:27,829 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:25:27,831 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:25:39,479 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:25:39,481 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:25:44,756 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:25:44,758 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:25:47,457 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:25:47,459 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:25:58,649 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:25:58,651 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:26:02,809 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:26:02,811 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:26:11,335 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:26:11,337 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:26:23,144 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:26:23,146 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:26:29,830 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:26:29,831 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:26:32,520 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:26:32,527 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:26:38,545 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:26:38,546 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:26:43,118 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:26:43,120 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:26:48,088 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:26:48,090 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_092238/memory_api_costs.log
+2025-11-22 09:26:55,310 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:26:55,311 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_092238/reasoning_api_costs.log
+2025-11-22 09:37:32,762 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-22 09:37:32,762 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-22 09:37:32,762 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-22 09:37:32,763 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-22 09:37:40,883 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:37:40,886 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093732/memory_api_costs.log
+2025-11-22 09:37:52,393 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:37:52,395 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093732/reasoning_api_costs.log
+2025-11-22 09:38:02,065 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:38:02,067 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093732/memory_api_costs.log
+2025-11-22 09:38:29,868 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:38:29,870 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093732/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093732/reasoning_api_costs.log
+2025-11-22 09:38:36,751 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:38:36,753 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093732/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093732/memory_api_costs.log
+2025-11-22 09:39:35,704 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-22 09:39:35,704 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-22 09:39:35,704 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-22 09:39:35,704 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-22 09:39:51,588 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:39:51,590 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:40:01,820 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:40:01,823 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:40:08,972 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:40:08,974 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:40:12,290 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:40:12,292 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:40:17,564 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:40:17,565 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:40:19,678 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:40:19,679 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:40:27,209 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:40:27,210 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:40:30,520 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:40:30,522 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:40:37,189 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:40:37,190 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:41:04,588 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:41:04,590 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:41:11,104 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:41:11,105 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:41:14,444 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:41:14,445 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:41:22,125 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:41:22,126 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:41:25,637 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:41:25,640 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:41:32,794 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:41:32,795 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:41:37,960 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:41:37,962 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:41:54,585 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:41:54,587 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:41:57,338 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:41:57,340 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:42:06,568 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:42:06,569 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:42:15,240 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:42:15,242 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:42:26,685 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:42:26,686 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:42:28,708 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:42:28,709 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:42:34,834 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:42:34,834 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_093935/memory_api_costs.log
+2025-11-22 09:42:39,362 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:42:39,364 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_093935/reasoning_api_costs.log
+2025-11-22 09:43:05,905 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-22 09:43:05,906 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-22 09:43:05,906 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-22 09:43:05,906 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-22 09:43:15,026 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:43:15,029 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:43:33,706 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:43:33,708 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 09:43:43,407 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:43:43,408 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:44:13,962 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:44:13,964 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 09:44:20,413 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:44:20,415 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:44:47,938 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:44:47,939 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 09:44:54,499 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:44:54,500 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:45:02,532 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:45:02,534 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 09:45:09,697 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:45:09,699 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:45:20,952 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:45:20,954 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 09:45:27,572 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:45:27,574 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:45:32,376 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:45:32,379 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 09:45:35,969 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:45:35,970 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:45:42,900 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:45:42,901 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 09:45:49,588 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:45:49,590 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:45:53,182 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:45:53,184 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 09:46:00,800 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:46:00,803 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:46:04,467 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:46:04,471 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 09:46:11,127 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:46:11,129 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:46:18,222 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:46:18,225 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 09:46:24,291 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:46:24,292 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:46:26,742 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:46:26,744 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 09:46:35,781 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:46:35,782 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_094305/memory_api_costs.log
+2025-11-22 09:46:37,765 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 09:46:37,766 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_094305/reasoning_api_costs.log
+2025-11-22 10:04:52,180 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-22 10:04:52,180 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-22 10:04:52,180 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-22 10:04:52,180 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-22 10:05:01,528 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:05:01,530 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_100452/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_100452/memory_api_costs.log
+2025-11-22 10:05:13,067 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:05:13,068 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_100452/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_100452/reasoning_api_costs.log
+2025-11-22 10:05:20,406 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:05:20,409 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_100452/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_100452/memory_api_costs.log
+2025-11-22 10:05:43,842 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:05:43,844 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_100452/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_100452/reasoning_api_costs.log
+2025-11-22 10:05:52,000 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:05:52,002 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_100452/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_100452/memory_api_costs.log
+2025-11-22 10:06:21,157 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-22 10:06:21,157 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-22 10:06:21,157 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-22 10:06:21,157 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-22 10:06:33,404 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:06:33,408 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_100621/memory_api_costs.log
+2025-11-22 10:06:47,600 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:06:47,603 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/reasoning_api_costs.log
+2025-11-22 10:07:08,899 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:07:08,904 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_100621/memory_api_costs.log
+2025-11-22 10:07:44,480 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:07:44,481 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/reasoning_api_costs.log
+2025-11-22 10:07:51,433 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:07:51,434 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_100621/memory_api_costs.log
+2025-11-22 10:08:48,025 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:08:48,027 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/reasoning_api_costs.log
+2025-11-22 10:08:56,366 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:08:56,368 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_100621/memory_api_costs.log
+2025-11-22 10:09:05,684 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:09:05,685 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/reasoning_api_costs.log
+2025-11-22 10:09:14,721 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:09:14,723 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_100621/memory_api_costs.log
+2025-11-22 10:09:20,838 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:09:20,840 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/reasoning_api_costs.log
+2025-11-22 10:09:26,965 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:09:26,966 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_100621/memory_api_costs.log
+2025-11-22 10:09:32,291 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:09:32,293 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/reasoning_api_costs.log
+2025-11-22 10:09:39,638 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:09:39,639 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_100621/memory_api_costs.log
+2025-11-22 10:09:43,027 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:09:43,028 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/reasoning_api_costs.log
+2025-11-22 10:09:49,300 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:09:49,302 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_100621/memory_api_costs.log
+2025-11-22 10:09:51,308 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:09:51,309 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_100621/reasoning_api_costs.log
+2025-11-22 10:09:51,484 - llm_agent.tools.serving.api_manager - ERROR - Error in text-only completion API call: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash
+Please retry in 8.528159743s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 8
+}
+]
+2025-11-22 10:10:21,484 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for base
+2025-11-22 10:10:21,484 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for perception
+2025-11-22 10:10:21,484 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for memory
+2025-11-22 10:10:21,484 - llm_agent.tools.serving.api_manager - INFO - Initialized API Manager for reasoning
+2025-11-22 10:10:28,807 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:10:28,809 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_101021/memory_api_costs.log
+2025-11-22 10:10:34,569 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:10:34,571 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_101021/reasoning_api_costs.log
+2025-11-22 10:10:40,322 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:10:40,324 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_101021/memory_api_costs.log
+2025-11-22 10:10:42,693 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:10:42,694 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_101021/reasoning_api_costs.log
+2025-11-22 10:10:47,558 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:10:47,560 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_101021/memory_api_costs.log
+2025-11-22 10:10:50,648 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:10:50,650 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_101021/reasoning_api_costs.log
+2025-11-22 10:10:56,786 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:10:56,787 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_101021/memory_api_costs.log
+2025-11-22 10:11:01,619 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:11:01,621 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_101021/reasoning_api_costs.log
+2025-11-22 10:11:09,198 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:11:09,199 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/memory/gemini-2.5-flash/text_only/20251122_101021/api_call.json and costs to cache/memory/gemini-2.5-flash/text_only/20251122_101021/memory_api_costs.log
+2025-11-22 10:11:12,658 - llm_agent.tools.serving.api_manager - ERROR - Error calculating costs: 'Model gemini-2.5-flash is not implemented.\n            Double-check your spelling, or submit an issue/PR'
+2025-11-22 10:11:12,659 - llm_agent.tools.serving.api_manager - INFO - Logged API call (text_only) to cache/reasoning/gemini-2.5-flash/text_only/20251122_101021/api_call.json and costs to cache/reasoning/gemini-2.5-flash/text_only/20251122_101021/reasoning_api_costs.log
+2025-11-22 10:11:12,838 - llm_agent.tools.serving.api_manager - ERROR - Error in text-only completion API call: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash
+Please retry in 47.171690638s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 47
+}
+]

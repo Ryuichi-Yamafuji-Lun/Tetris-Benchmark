@@ -33,7 +33,6 @@ def agent_action(obs, info):
     """
     Retrieves the feature vector observation and returns the greedy action.
     """
-    print(info["action_mask"])
     
     action_mask = info["action_mask"]
     num_actions = len(action_mask)
@@ -51,5 +50,6 @@ def agent_action(obs, info):
     
     # 3. Choose the action with the highest Q-value
     action = torch.argmax(q_values).cpu().numpy()
+    print(action)
     
     return action

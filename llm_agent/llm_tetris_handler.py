@@ -34,16 +34,24 @@ class TetrisReasoningModule(ReasoningModule):
 
 # --- HELPER: Abstraction Logic (NumPy Feature Vector to Text Prompt) ---
 
-def convert_features_to_prompt(obs_vector: np.ndarray, action_mask: np.ndarray, action_map: Dict[str, int]) -> str:
+def convert_features_to_prompt(obs_vector: np.ndarray, action_mask: np.ndarray, action_map: Dict[str, int], info: dict, tetromino_map: Dict[int, str]) -> str:
     """
     Translates the numerical feature vector (obs) and action mask into a text prompt.
     This replaces the Perception Module's job for the V1 benchmark.
     """
     features = obs_vector.flatten()
     
+    if len(features) > 11:
+        piece_id = int(features[11])
+    else:
+        piece_id = -1
+    
+    current_piece_name = tetromino_map.get(piece_id, "UNKNOWN")
+    
     # 1. Feature Decoding: Assume standard 10 heights, 3 aggregate stats.
     feature_summary = (
         f"Column Heights Vector (C0 to C9): {features[:10].round(2).tolist()}\n"
+        f"Active Piece: {current_piece_name}\n" 
         f"Aggregate Stats (Holes, Roughness, Next Piece Type, etc.): {features[10:].round(2).tolist()}"
     )
     
@@ -71,17 +79,18 @@ class TetrisAgentHandler(BaseAgent):
     
     def __init__(self, **kwargs):
         # Configuration file paths (relative to the base_agent.py execution context)
-        # NOTE: We use the structure provided in the screenshot.
         config_file_path = str(Path(__file__).parent / "configs" / "module_prompts.json")
         env_config_file_path = str(Path(__file__).parent / "configs" / "game_env_config.json")
         
         # Load Action Map from external file for constraint enforcement
         self.ACTION_MAP = self._load_action_map(env_config_file_path)
         
+        self.TETROMINO_MAP = self._load_tetromino_map(env_config_file_path)
+        
         # Call parent's constructor to set up modules and harness
         super().__init__(
             game_name="tetris",
-            model_name="gemini-2.5-flash", # Example
+            model_name="gemini-2.5-flash", # Now set to the free tier model
             harness=True, # Enforce full harness mode
             config_path=config_file_path, # Pass path to module_prompts.json
             custom_modules={
@@ -112,9 +121,6 @@ class TetrisAgentHandler(BaseAgent):
             constrained_map['RIGHT'] = constrained_map.get('RIGHT', 2)
             constrained_map['ROTATE_LEFT'] = constrained_map.get('ROTATE_LEFT', 3)
             constrained_map['ROTATE_RIGHT'] = constrained_map.get('ROTATE_RIGHT', 4)
-            # Safely map excluded/invalid actions to NO_OP
-            constrained_map['SOFT_DROP'] = 0
-            constrained_map['HARD_DROP'] = 0
             
             return constrained_map
             
@@ -122,6 +128,21 @@ class TetrisAgentHandler(BaseAgent):
             print(f"CRITICAL: Failed to load or parse action map from {env_config_path}. Using hardcoded default.")
             # Fallback to safe 5-action map if file fails
             return {"NO_OP": 0, "LEFT": 1, "RIGHT": 2, "ROTATE_CCW": 3, "ROTATE_CW": 4}
+
+    def _load_tetromino_map(self, env_config_path: str) -> Dict[int, str]:
+        """Loads and processes the Tetromino name mapping."""
+        try:
+            with open(env_config_path, 'r') as f:
+                config = json.load(f)
+            
+            # The keys are strings in the JSON ("0", "1", etc.), convert them to integers
+            raw_map = config.get('tetromino_mapping', {})
+            return {int(k): v for k, v in raw_map.items()}
+            
+        except Exception as e:
+            print(f"CRITICAL: Failed to load or parse Tetromino map from {env_config_path}. Using hardcoded default.")
+            # Fallback to confirmed Tetromino names/IDs if file fails
+            return {0: "I_Line", 1: "O_Square", 2: "T_Piece", 3: "S_Piece", 4: "Z_Piece", 5: "J_Piece", 6: "L_Piece"}
 
 
     # NOTE: The BaseAgent's get_action logic is INHERITED and automatically executes the harness.
@@ -136,7 +157,14 @@ def agent_action(obs: np.ndarray, info: dict) -> int:
     The final function called by the test.py runner. It executes the full LLM policy.
     """
     # 1. Abstraction: Convert numerical features and mask to the text prompt
-    prompt_text = convert_features_to_prompt(obs, info["action_mask"], AGENT_INSTANCE.ACTION_MAP)
+    # UPDATED CALL SITE: Pass info and the TETROMINO_MAP
+    prompt_text = convert_features_to_prompt(
+        obs, 
+        info["action_mask"], 
+        AGENT_INSTANCE.ACTION_MAP,
+        info, 
+        AGENT_INSTANCE.TETROMINO_MAP
+    )
     
     # 2. Package into Observation object
     llm_observation = Observation(textual_representation=prompt_text)
@@ -151,5 +179,10 @@ def agent_action(obs: np.ndarray, info: dict) -> int:
     # Normalize and map the string action to the integer index
     final_action_str = action_str.upper().strip().replace(' ', '_')
     
+    print("finactionstr:", final_action_str)
     # Returns the integer action index, defaulting to 0 (NO_OP) if not found.
-    return AGENT_INSTANCE.ACTION_MAP.get(final_action_str, 0)
+    action = AGENT_INSTANCE.ACTION_MAP.get(final_action_str, 0)
+
+    print("return action:", action)
+
+    return action
