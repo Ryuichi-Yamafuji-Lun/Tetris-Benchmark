@@ -175,14 +175,11 @@ def agent_action(obs: np.ndarray, info: dict) -> int:
     
     # 4. Mapping: Convert string action to integer
     action_str = action_plan.get("action", "NO_OP")
-    
+
     # Normalize and map the string action to the integer index
     final_action_str = action_str.upper().strip().replace(' ', '_')
     
-    print("finactionstr:", final_action_str)
     # Returns the integer action index, defaulting to 0 (NO_OP) if not found.
     action = AGENT_INSTANCE.ACTION_MAP.get(final_action_str, 0)
-
-    print("return action:", action)
 
     return action
